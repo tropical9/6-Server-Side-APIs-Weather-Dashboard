@@ -1,4 +1,4 @@
-# Third Party APIs Challenge: Work Day Scheduler
+# Server Side APIs Challenge: Weather Dashboard
 
 
 ## Description
