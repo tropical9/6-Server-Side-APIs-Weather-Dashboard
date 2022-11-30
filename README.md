@@ -27,7 +27,10 @@ N/A
 ## Usage
 
 This webpage will show weather data for different cities.  
+
+![img](./assets/images/Screenshot.jpg)
 https://tropical9.github.io/6-Server-Side-APIs-Weather-Dashboard/
+
 
 
 
