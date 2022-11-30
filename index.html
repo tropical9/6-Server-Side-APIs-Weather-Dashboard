@@ -35,9 +35,22 @@
 
     <div>
         <div class="container">
-            <div class=" row p-3 col-9 border border-info rounded" id="forecast">
-                <h4 class="city">This is where i will display the current city </h4>
+            <section class="p-3 col-9 border" id="forecast">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="Temp">Temp:</p>
+                                <p class="Wind"> Wind:</p>
+                                <p class="Humidity"> Humidity:</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <h4 class="mb-3 p-3"> City and Date </h4>
             </div>
+
         </div>
     </div>
 
@@ -48,6 +61,8 @@
             <div class="row p-3 col-9" id="5dayforecast">
             <h3 class="mb-3 p-3">5-Day Forecast:</h3>
             </div>
+
+
         
         <div class="p-3 col-9">
             <section class="container my-5 p-3">
@@ -130,7 +145,7 @@
 
     </section>
 
-    </ <script src="https://code.jquery.com/jquery-3.6.1.js"
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
