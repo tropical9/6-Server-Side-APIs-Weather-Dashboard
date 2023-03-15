@@ -48,3 +48,30 @@ function displayWeatherData(data) {
     }
 }
 
+function saveCityToLocalStorage(city) {
+    let cities = JSON.parse(localStorage.getItem("cities")) || [];
+    if (!cities.includes(city)) {
+        cities.push(city);
+        localStorage.setItem("cities", JSON.stringify(cities));
+    }
+}
+
+function displaySearchHistory() {
+    const cities = JSON.parse(localStorage.getItem("cities")) || [];
+    const searchHistory = document.querySelector("#searchHistory");
+
+    cities.forEach(city => {
+        const cityButton = document.createElement("button");
+        cityButton.textContent = city;
+        cityButton.classList.add("btn", "btn-secondary", "w-100", "mb-1");
+        cityButton.addEventListener("click", () => {
+            fetchWeatherData(city);
+        });
+
+        searchHistory.appendChild(cityButton);
+    });
+}
+
+displaySearchHistory();
+
+
