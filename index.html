@@ -15,138 +15,59 @@
         <h1> Weather Dashboard</h1>
     </header>
 
-
     <div>
         <div class="container">
             <div class="row align-items-end">
                 <form>
                     <div class="p-3 col-3">
-                        <label for="InputCity" class="form-label">Search for a City</label>
-                        <input type="city" class="form-control" id="exampleInputEmail1">
+                        <label for="inputCity" class="form-label">Search for a City</label>
+                        <input type="city" class="form-control" id="inputCity">
                         <div id="emailHelp" class="form-text">Enter the City you want to lookup.</div>
                         <button type="button" class="btn btn-primary w-100 mb-3">Search</button>
-
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-
     <div>
         <div class="container">
-            <section class="p-3 col-9 border" id="forecast">
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="Temp">Temp:</p>
-                                <p class="Wind"> Wind:</p>
-                                <p class="Humidity"> Humidity:</p>
-                            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" id="currentWeather">
+                        <div class="card-body">
+                            <p class="temp">Temp:</p>
+                            <p class="wind">Wind:</p>
+                            <p class="humidity">Humidity:</p>
                         </div>
                     </div>
-
                 </div>
-                <h4 class="mb-3 p-3"> City and Date </h4>
             </div>
-
+            <h4 class="mb-3 p-3">City and Date</h4>
         </div>
     </div>
 
-
-
     <div>
-        <div class = "container">
-            <div class="row p-3 col-9" id="5dayforecast">
-            <h3 class="mb-3 p-3">5-Day Forecast:</h3>
+        <div class="container">
+            <div class="row p-3 col-9" id="fiveDayForecast">
+                <h3 class="mb-3 p-3">5-Day Forecast:</h3>
             </div>
 
-
-        
-        <div class="p-3 col-9">
-            <section class="container my-5 p-3">
-                <div class="row">
-
-
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Date:</h5>
-                                <p class="Temp">Temp:</p>
-                                <p class="Wind"> Wind:</p>
-                                <p class="Humidity"> Humidity:</p>
-                            </div>
-                        </div>
+            <div class="p-3 col-9">
+                <section class="container my-5 p-3">
+                    <div class="row" id="fiveDayForecast">
+                        <!-- The forecast cards will be inserted here by the JavaScript code -->
                     </div>
-
-
-
-
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Date:</h5>
-                                <p class="Temp">Temp:</p>
-                                <p class="Wind"> Wind:</p>
-                                <p class="Humidity"> Humidity:</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="col">
-                        <div class="card">
-                            
-                            <div class="card-body">
-                                <h5 class="card-title">Date:</h5>
-                                <p class="Temp">Temp:</p>
-                                <p class="Wind"> Wind:</p>
-                                <p class="Humidity"> Humidity:</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col">
-                        <div class="card">
-                            
-                            <div class="card-body">
-                                <h5 class="card-title">Date:</h5>
-                                <p class="Temp">Temp:</p>
-                                <p class="Wind"> Wind:</p>
-                                <p class="Humidity"> Humidity:</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Date:</h5>
-                                <p class="Temp">Temp:</p>
-                                <p class="Wind"> Wind:</p>
-                                <p class="Humidity"> Humidity:</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
+                </section>
+            </div>
         </div>
-        
-    
+    </div>
 
-
-    </section>
-
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="./assets/javascript/script.js">
+        
+    </script>
 </body>
+</html>
+
