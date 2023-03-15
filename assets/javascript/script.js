@@ -47,3 +47,4 @@ function displayWeatherData(data) {
         fiveDayForecast.appendChild(card);
     }
 }
+
